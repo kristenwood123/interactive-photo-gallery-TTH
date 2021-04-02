@@ -7,8 +7,8 @@
 .input-container {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 input {
@@ -25,16 +25,25 @@ input::placeholder {
 
 .grid {
   box-shadow: 0 0.1em 0 0 rgba(0, 0, 0, 0.1);
-  margin: 45px auto;
+  margin: 0 auto;
   display: grid;
-  max-width: 900px;
+  max-width: 780px;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  grid-template-rows: repeat(3, minmax(180px, 1fr));
-  grid-gap: 15px;
+  grid-auto-rows: 180px;
+  grid-gap: 20px;
+  padding-bottom: 70px;
 }
 
 .grid img {
   max-width: 180px;
   height: 180px;
   margin: 0 auto;
+  cursor: pointer;
+  filter: grayscale(60%);
+}
+
+.grid img:hover {
+  filter: none;
+  transition: 0.3s ease-out;
+  transform: scale(1.1);
 }
