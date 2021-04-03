@@ -23,7 +23,7 @@ input::placeholder {
   font-size: 16px;
 }
 
-.grid {
+.gallery {
   box-shadow: 0 0.1em 0 0 rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   display: grid;
@@ -34,16 +34,16 @@ input::placeholder {
   padding-bottom: 70px;
 }
 
-.grid img {
+.gallery a[href] {
   max-width: 180px;
   height: 180px;
   margin: 0 auto;
   cursor: pointer;
-  filter: grayscale(60%);
+  filter: grayscale(66%);
 }
 
-.grid img:hover {
+.gallery a[href]:hover {
   filter: none;
   transition: 0.3s ease-out;
-  transform: scale(1.1);
+  transform: scale(1.06);
 }
