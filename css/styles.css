@@ -16,11 +16,15 @@ input {
   border: 2px solid rgb(207, 207, 207);
   border-radius: 6px;
   height: 50px;
+  padding-left: 10px;
 }
 
 input::placeholder {
-  padding-left: 10px;
   font-size: 16px;
+}
+
+input:focus {
+  outline-color: rgb(124, 176, 236);
 }
 
 .gallery {
@@ -34,16 +38,20 @@ input::placeholder {
   padding-bottom: 70px;
 }
 
-.gallery a[href] {
+.gallery .item {
   max-width: 180px;
   height: 180px;
   margin: 0 auto;
   cursor: pointer;
-  filter: grayscale(66%);
+  filter: grayscale(40%);
 }
 
-.gallery a[href]:hover {
+.gallery .item:hover {
   filter: none;
   transition: 0.3s ease-out;
   transform: scale(1.06);
+}
+
+img {
+  max-width: 180px;
 }
