@@ -8,9 +8,9 @@ const handleSearch = (e) => {
 
   for (let i = 0; i < array.length; i++) {
     let caption = array[i].getAttribute('data-caption')
-    let alt = array[i].getAttribute('alt')
+    let title = array[i].getAttribute('title')
     let image = array[i]
-     if(caption.includes(inputValue) || alt.includes(inputValue)) {
+     if(caption.includes(inputValue) || title.includes(inputValue)) {
       image.style.display = 'inline'
     } else {
       image.style.display = 'none'
