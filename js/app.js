@@ -5,11 +5,10 @@ const handleSearch = (e) => {
   let inputValue = e.target.value.toLowerCase();
   let array = document.getElementsByClassName('item')
 
-
   for (let i = 0; i < array.length; i++) {
-    let caption = array[i].getAttribute('data-caption')
-    let title = array[i].getAttribute('title')
     let image = array[i]
+    let caption = image.getAttribute('data-caption').toLowerCase()
+    let title = image.getAttribute('title').toLowerCase()
      if(caption.includes(inputValue) || title.includes(inputValue)) {
       image.style.display = 'inline'
     } else {
