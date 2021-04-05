@@ -9,11 +9,7 @@ const handleSearch = (e) => {
     let image = array[i]
     let caption = image.getAttribute('data-caption').toLowerCase()
     let title = image.getAttribute('title').toLowerCase()
-     if(caption.includes(inputValue) || title.includes(inputValue)) {
-      image.style.display = 'inline'
-    } else {
-      image.style.display = 'none'
-    }
+    caption.includes(inputValue) || title.includes(inputValue)? image.style.display = 'inline' : image.style.display = 'none'
   }
 }
 
