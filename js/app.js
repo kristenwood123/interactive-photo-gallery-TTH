@@ -1,4 +1,3 @@
-
 let input = document.getElementById('input')
 
 const handleSearch = (e) => {
@@ -12,7 +11,6 @@ const handleSearch = (e) => {
     caption.includes(inputValue) || title.includes(inputValue)? image.style.display = 'inline' : image.style.display = 'none'
   }
 }
-
 input.addEventListener('keyup', handleSearch)
 
 baguetteBox.run('.gallery', {
